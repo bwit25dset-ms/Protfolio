@@ -1,0 +1,131 @@
+
+.register_body{
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg,#ff4d6d,#7c3aed,#0f172a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register_form{
+    width: 900px;
+    max-width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.4);
+    background: white;
+}
+
+
+.left_side{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #f8fafc;
+}
+
+
+.right_side{
+    background: linear-gradient(135deg,#111827,#1f2937);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: white;
+}
+
+
+.left_side h2,
+.right_side h2{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.form_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.form_menu label{
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+
+.form_menu input{
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: #eef2f7;
+    outline: none;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+
+.form_menu input:focus{
+    box-shadow: 0 0 0 2px #ff4d6d;
+    background: white;
+}
+
+
+.right_side .form_menu input{
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.right_side .form_menu input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+
+.form_check{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+.register_btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#ff4d6d,#7c3aed);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.register_btn:hover{
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+@media(max-width:768px){
+    .register_form{
+        grid-template-columns: 1fr;
+    }
+
+    .left_side,
+    .right_side{
+        padding: 25px;
+    }
+}

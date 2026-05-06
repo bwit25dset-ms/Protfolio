@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Table</title>
+<link rel="stylesheet" href="../CSS/Table.css">
+</head>
+
+<body>
+
+<div class="table_container">
+
+    <h2>User Details</h2>
+
+    <input type="text" id="search" placeholder="Search name...">
+
+    <table>
+        <caption><b>Student Information</b></caption>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+            <tr>
+                <td>1</td>
+                <td>Shreshant Wagle</td>
+                <td>20</td>
+                <td>Bhairahawa</td>
+                <td><span class="status active">Active</span></td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Monica</td>
+                <td>20</td>
+                <td>Kathmandu</td>
+                <td><span class="status active">Active</span></td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Alisha</td>
+                <td>25</td>
+                <td>London</td>
+                <td><span class="status inactive">Inactive</span></td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">Total Users: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+
+
+
+</body>
+</html>
